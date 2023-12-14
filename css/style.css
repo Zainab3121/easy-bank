@@ -29,3 +29,66 @@ nav a {
     color: black;
 }
 
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 14px;
+    background-color: aquamarine;
+}
+
+main {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+main div {
+    align-items: center;
+}
+
+main h1 {
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+main p {
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+main button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 14px;
+    background-color: aquamarine;
+}
+
+section {
+    display: block;
+    justify-content: space-between;
+    padding: 100px 70px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(12, 15, 48);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+footer button {
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 14px;
+    background-color: aquamarine;
+}
+
+
+
