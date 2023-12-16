@@ -11,7 +11,6 @@ a {
 }
 
 nav {
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,16 +28,16 @@ nav a {
     color: black;
 }
 
-nav button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 7px 14px;
-    background-color: aquamarine;
+button {
+    padding: 7px 17px;
+    background: linear-gradient(to right,#30CD79,#2BBBC5);
+    color: white;
+    border: none;
+    border-radius: 50px;
 }
 
 main {
-    background-color: whitesmoke;
+    background-color: #F3F4F6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,38 +45,106 @@ main {
 }
 
 main div {
-    align-items: center;
+    width: 42%;
+}
+
+main img {
+    width: 45%;
 }
 
 main h1 {
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 40px;
+    font-size: 60px;
+    font-weight: 400;
 }
 
 main p {
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 40px;
+    font-size: 20px;
+    margin: 20px 0px;
 }
 
-main button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 7px 14px;
-    background-color: aquamarine;
-}
-
-section {
+/* section {
     display: block;
     justify-content: space-between;
     padding: 100px 70px;
+} */
+
+#about {
+    margin: 70px 70px;
+}
+
+.about-header h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.about-header p {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px 0px;
+    width: 45%;
+}
+
+.about-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.about-body img {
+    margin-bottom: 20px; 
+}
+
+.about-body h3 {
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+.about-body p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+article {
+    background-color:#F3F4F6;
+    padding: 70px 40px;
+}
+
+#bellow img {
+    width: 80%;
+    height: 60%;
+}
+
+#bellow-header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.bellow-body {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.bellow-body h3 {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.bellow-body a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.bellow-body p {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 70%;
 }
 
 footer {
     display: flex;
-    background-color: rgb(12, 15, 48);
+    background-color: #2D314D;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
@@ -88,6 +155,25 @@ footer button {
     justify-content: space-between;
     padding: 7px 14px;
     background-color: aquamarine;
+}
+
+#underneath-head ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+#underneath-body ul {
+    display: block;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#underneath-bottom p {
+    font-size: 10px;
+    color: white;
+    margin-top: 20px;
 }
 
 
