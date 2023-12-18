@@ -6,8 +6,16 @@
     font-family: 'Public Sans', sans-serif;
 }
 
+html,body {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 nav {
@@ -21,7 +29,6 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 60px;
-    list-style: none;
 }
 
 nav a {
@@ -29,11 +36,12 @@ nav a {
 }
 
 button {
-    padding: 7px 17px;
+    padding: 10px 17px;
     background: linear-gradient(to right,#30CD79,#2BBBC5);
     color: white;
     border: none;
     border-radius: 50px;
+    font-size: 15px;
 }
 
 main {
@@ -60,6 +68,7 @@ main h1 {
 main p {
     font-size: 20px;
     margin: 20px 0px;
+    line-height: 1.7;
 }
 
 /* section {
@@ -69,7 +78,12 @@ main p {
 } */
 
 #about {
-    margin: 70px 70px;
+    padding: 70px 70px;
+}
+
+.about-header {
+    width: 45%;
+    margin-bottom: 4rem;
 }
 
 .about-header h2 {
@@ -81,7 +95,7 @@ main p {
     font-size: 18px;
     font-weight: normal;
     margin: 20px 0px;
-    width: 45%;
+    line-height: 1.6;
 }
 
 .about-body {
@@ -103,26 +117,37 @@ main p {
 .about-body p {
     font-size: 18px;
     margin: 20px 0px;
+    line-height: 1.7;
 }
 
 article {
     background-color:#F3F4F6;
     padding: 70px 40px;
 }
+.article-content {
+    box-shadow: 0px 0px 10px gray;
+}
+
+.article-content div {
+    padding: 20px;
+}
 
 #bellow img {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 45%;
 }
 
 #bellow-header {
     font-size: 30px;
     font-weight: 600;
+    color: grey;
 }
 
 .bellow-body {
-    display: flex;
+    display: grid;
     margin: 20px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
 
 .bellow-body h3 {
@@ -139,7 +164,6 @@ article {
 .bellow-body p {
     font-size: 14px;
     margin-top: 10px;
-    width: 70%;
 }
 
 footer {
@@ -150,24 +174,29 @@ footer {
     padding: 20px 40px;
 }
 
-footer button {
-    align-items: center;
-    justify-content: space-between;
-    padding: 7px 14px;
-    background-color: aquamarine;
+footer a {
+    color: white;
 }
 
 #underneath-head ul {
     display: flex;
     gap: 20px;
-    list-style: none;
     text-decoration: none;
 }
 
-#underneath-body ul {
-    display: block;
-    list-style: none;
+#underneath-head img {
+    margin-bottom: 40px;
+    filter: invert(0.5);
+}
+
+#underneath-body {
+    display: flex;
+    gap: 100px;
     grid-template-columns: repeat(2, 1fr);
+}
+
+#underneath-body li {
+    margin: 20px 0px;
 }
 
 #underneath-bottom p {
