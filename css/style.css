@@ -25,6 +25,10 @@ nav {
     padding: 20px 40px;
 }
 
+.toggle {
+    display: none;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -150,7 +154,7 @@ article {
     display: grid;
     margin: 20px 0px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 40px;
 }
 
 .bellow-body h3 {
@@ -261,6 +265,10 @@ footer a {
         width: 100%;
     }
 
+    .bellow-body {
+        gap: 15px;
+    }
+
     .article-content div {
         padding: 14px;  
     }
@@ -330,7 +338,27 @@ footer a {
     }
 
     nav ul {
-        display: contents;
+        position: fixed;
+        background-color: white;
+        flex-direction: column;
+        left: 50%;
+        top: -35%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        padding: 25px 0px;
+        transition: 0.5s;
+        border: 1px solid grey;
+        border-radius: 7px;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .ri-close-fill {
+        display: none;
     }
 
     main {
@@ -354,6 +382,7 @@ footer a {
     .about-header {
         text-align: center;
         width: 93%;
+        margin: 0px auto 4rem;
     }
 
     .about-header h2 {
@@ -378,10 +407,12 @@ footer a {
     }
     .bellow-body {
         grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
 
     #bellow img {
-        height: 62%;
+        height: 52%;
+        object-fit: cover;
     }
 
     footer {

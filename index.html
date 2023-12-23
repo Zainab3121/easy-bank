@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -15,6 +16,11 @@
        <a href="/">
             <img src="/images/logo.svg" alt="easybank-logo">
         </a>
+
+        <div class="toggle">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-fill"></i>
+        </div>
 
         <ul>
             <li>
@@ -61,19 +67,19 @@
         </div>
 
         <div class="about-body">
-            <div>
+            <div  data-aos="fade-up" data-aos-delay="1">
                 <img src="/images/icon-online.svg" alt="online icon image">
                 <h3>Online Banking</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <img src="/images/icon-budgeting.svg" alt="budgeting icon image">
                 <h3>Simple Budgeting</h3>
                 <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <img src="/images/icon-onboarding.svg" alt="onboarding icon image">
                 <h3>Fast Onboarding</h3>
                 <p>
@@ -81,7 +87,7 @@
                 </p>
             </div>
             
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
                 <img src="/images/icon-api.svg" alt="open API icon image">
                 <h3>Open API</h3>
                 <p>
@@ -214,5 +220,9 @@
         </div>
 
     </footer>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/Js/main.Js"></script>
 </body>
 </html>
